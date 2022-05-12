@@ -43,10 +43,27 @@ if (!isset($_SESSION['user_id'])) {
                     <div class="form-group">
                         <label for="color">Color:</label>
                         <input id="color" class="form-control" type="text" name="color">
-                    </div> <br>
+                    </div>
+                    <!--<div class="form-group">
+
+                        <label for="">
+                            <select name="usuario" id="usuario">
+                            <?php
+                                include('config.php');
+                                $query = $conn->prepare("SELECT * FROM usuarios");
+                                $query->execute();
+                                ?>
+                                <?php foreach ($query as $opciones) : ?>
+                                    <option value="<?php echo $opciones['username']?>"><?php echo $opciones['username']?></option>
+                                <?php endforeach ?>
+                            </select>
+                        </label>
+                    </div>-->
+                    
+                    <br>
                     <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#guardar" type="button">Guardar</button>
 
-                    <a href="principal.php" class="btn btn-large btn-danger"><i class="glyphicon glyphicon-backward"></i>Cancelar</a>
+                    <a href="admin_Mascotas.php" class="btn btn-large btn-danger"><i class="glyphicon glyphicon-backward"></i>Cancelar</a>
 
                     <div class="modal fade" tabindex="-1" id="guardar" aria-labelledby="ModalFade" aria-hidden="true">
                         <div class="modal-dialog">

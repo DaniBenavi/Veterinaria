@@ -25,7 +25,24 @@
           <a class="nav-link active" aria-current="page" href="admin_users.php">Usuarios</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="php_cerrar.php">Salir</a>
+          <a class="nav-link active" aria-current="page" data-bs-toggle="modal" data-bs-target="#salir">Salir</a>
+          <div class="modal fade" tabindex="-1" id="salir" aria-labelledby="ModalFade" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title"><strong>Alerta!</strong></h5>
+                  <button type="button" class="btn-close btn-danger" data-bs-dismiss="modal" aria-label="Close"><button>
+                </div>
+                <div class="modal-body">
+                  <p>¿Desea Salir?</p>
+                </div>
+                <div class="modal-footer">
+                  <a class="btn btn-primary" href="php_cerrar.php" type="submit">SI</a>
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">NO</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </li>
 
       </ul>

@@ -74,7 +74,7 @@ if (isset($_GET['edit_id'])) {
                     <br>
                     <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#guardar">Actualizar</button>
 
-                    <a href="principal.php" class="btn btn-large btn-danger"><i class="glyphicon glyphicon-backward"></i>Cancelar</a>
+                    <a href="admin_Mascotas.php" class="btn btn-large btn-danger"><i class="glyphicon glyphicon-backward"></i>Cancelar</a>
                     
                     <div class="modal fade" tabindex="-1" id="guardar" aria-labelledby="ModalFade" aria-hidden="true">
                         <div class="modal-dialog">
